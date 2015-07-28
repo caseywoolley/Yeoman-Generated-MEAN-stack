@@ -4,6 +4,7 @@ angular.module('workspaceApp')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [];
     //test change
+    //gitignore updated
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
     });
